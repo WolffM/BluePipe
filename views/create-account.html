@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+ 		<style>
+ 			body {
+			 margin: 0;
+			 background-image: url(../img/back.jpg);
+			 background-repeat: no-repeat;
+			 background-position:center center fixed;
+		        -webkit-background-size: cover;
+		        -moz-background-size: cover;
+		        -o-background-size: cover;
+		        background-size: cover;
+			 display: compact;
+			 font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+			}
+			
+			#white h1 {
+			   color: white;
+			}
+			#white h3 {
+			   color: white;
+			}
+			#white legend{
+				color: white;
+			}
+			#white p{
+				color: white;
+			}
+		</style>
+	</head>
+		<div class = "container">
+			<body id="white">
+			<h1 class='text-info' align="center">CraigsList 2.0</h1>
+			
+			<br><br><br>
+
+			<legend class='text-info'>Create Account</legend>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Contact Information</h3>
+					<p class='text-primary'>Name</p>
+					<input type='text' name ='name' value='' required value='1'>
+					<br><br>
+					<p class='text-primary'>Email Address</p>
+					<input type='text' name ='email' value='' required value='1'>
+					<br><br>
+					<p class='text-primary'>Mailing Address</p>
+					<input type='text' name ='mail' value='' required value='1'>
+
+				</div>
+
+				<div class="col-sm-4">
+					<h3>Account Information</h3>
+					<p class='text-primary'>Username</p>
+					<input type='text' name ='username' value='' required value='1'>
+			
+					<br><br>
+			
+					<p class='text-primary'>Password</p>
+					<input type='password' name ='password' value='' required value='1'>
+			
+					<br><br>
+
+					<p class='text-primary'>Confirm Password</p>
+					<input type='password' name ='cpassword' value='' required value='1'>
+
+					<br><br>
+
+					<label class='btn btn-success' onclick="window.location.href='home.html'">Submit</label>
+				</div>
+			</body>
+
+			
+			<br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</body>
+</html>
