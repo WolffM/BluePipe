@@ -39,7 +39,7 @@
 	</head>
 		<div class = "container">
 			<body id="white">
-			<h1 class='text-info' align="center">CraigsList 2.0</h1>
+			<h1 class='text-info' align="center">Craigslist 2.0</h1>
 			
 			<br><br><br>
 
@@ -76,10 +76,28 @@
 
 					<br><br>
 
-					<label class='btn btn-success' onclick="window.location.href='home.html'">Submit</label>
 				</div>
 				<div class="col-sm-4">
-					<h3>Account Information (cont) </h3>
+					<h3>Account Information (cont.) </h3>
+					<p class='text-primary'> PayPal E-Mail </p>
+					<input type='text' name ='paypal_email' value='' required value='1'>
+					<br><br>
+					<p class='text-primary'> Location </p>
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Location Selection
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labeledby="dropdownLocation">
+							<li><a href="#">Boston, MA</a></li>
+							<li><a href="#">Amherst, MA</a></li>
+							<li><a href="#">Worcester, MA</a></li>
+							<li><a href="#">Albany, NY</a></li>
+						</ul>
+					</div>
+					<br>
+					<label class='btn btn-success' onclick="window.location.href='thank-you.html'">Submit</label>
+
 				</div>
 			</body>
 
