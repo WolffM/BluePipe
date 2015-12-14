@@ -293,9 +293,13 @@
 			#white legend{
 				color: white;
 			}
-			#white p{
-				color: white;
-			}
+
+			#box	div {
+		    width: 320px;
+		    padding: 1px;
+		    border: 1px solid gray;
+		    margin: 0;
+}
 		</style>
 
 
@@ -312,7 +316,9 @@
 				</ul>
 
     <div class="page-header">
+    	<body id="white">
         <h1 class='text-info' align="center" font color:"white">craigslist 2.0</h1>
+    </body>
     </div>
 
     <div class="container">
@@ -336,40 +342,44 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="control-label">Street Number</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 2448">
+                                        <label class="control-label">Account Name</label>
+                                        <p>John Smith<p>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="control-label">Street Name</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 18TH">
+                                        <label class="control-label">Phone Number</label>
+                                        <p>(123)456-7890<p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="control-label">Street Suffix</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Street">
+                                        <label class="control-label">Address</label>
+                                        <p>123 Example Street <br>
+                                           Example City, Example State<br>
+                                           12345
+                                        </p>
+
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="control-label">Quad</label>
-                                        <input type="text" class="form-control" placeholder="e.g. NW">
+                                        <label class="control-label">Email</label>
+                                        <p>johnsmith@craiglist.com<p>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="form-group">
-                                        <label class="control-label">Street Number Suffix</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 1/2">
+                                        <label class="control-label">Date of Birth</label>
+                                        <p>12/3/4567<p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-4 col-sm-offset-4">
-                                    <button type="submit" class="btn btn-primary btn-block">Find</button>
+                                    <button onclick="window.location.href='forgot-password.html'" class="btn btn-primary btn-block">Forgot Password</button>
                                 </div>
                             </div>
                         </div>
@@ -377,28 +387,105 @@
 
                         <div class="tab-pane fade" id="tab2primary">
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label class="control-label">Square</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 3119">
+                                        <label class="control-label">Contacts:</label><br><br>
+                                        <div class="col-sm-4">
+                                        <img src="../img/green.jpg" style="width:50px;height:50px;">
+                                  		 </div>
+                                  		 <div class="col-sm-8">
+                                        <p>Hi, I'm interested in the honda civic you are selling. Please give me a call at (123)456-7890 if you would like to arrange somthing. Thanks.</p><br>
+                                         
+                                        <button type="submit" class="btn btn-primary"style="float: right;">Reply</button>
+                                        <br><br>
+                                        </div>
+                                       
+
+
+                                        <div class="col-sm-4">
+
+                                        <img src="../img/org.jpg" style="width:50px;height:50px;">
+                                         </div>
+                                         <div class="col-sm-8">
+                                        <p>Hello. I still have not recieved the price we agreed on for the bike from last week. If you do not respond within 3 days, I will be filling a complaint.</p><br>
+                                         
+                                        <button type="submit" class="btn btn-primary"style="float: right;">Reply</button>
+                                        <br><br>
+                                        </div>
+                                       
+                                        <br><br>
+                                        <div class="col-sm-4">
+
+                                        <img src="../img/teal.jpg" style="width:50px;height:50px;">
+                                         </div>
+                                         <div class="col-sm-8">
+                                        <p>Hello John, Sorry I didn't get back to you sooner about the pink bike you wanted to buy. Feel free to leave me a message if you would like to work somthing out, Thanks!</p><br>
+                                         
+                                        <button type="submit" class="btn btn-primary"style="float: right;">Reply</button>
+                                        <br><br>
+                                        </div>
+                                      
+
+
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group" >
+                                        <label class="control-label">Reviews:</label><br><br>
+
+                                         <div class="col-sm-3">
+                                        <img src="../img/plus.jpg" style="width:50px;height:50px;">
+                                  		 </div>
+                                  		 <div class="col-sm-8">
+                                        <p><br>You have: 12 Positive Reviews.</p><br>
+                                        <br><br>
+                                        </div>
+                                        
+                                         <div class="col-sm-3">
+                                        <img src="../img/minus.png" style="width:50px;height:50px;">
+                                  		 </div>
+                                  		 <div class="col-sm-8">
+                                        <p><br>You have: 2 Negative Reviews.</p><br>
+                                         
+                                        <br><br>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label class="control-label">Suffix</label>
-                                        <input type="text" class="form-control">
+                                    <div class="form-group"><br><br><br>
+                                        <label class="control-label">Feedback:</label><br><br>
+
+
+                                        <div class="col-sm-4">
+                                        <img src="../img/plus.jpg" style="width:50px;height:50px;">
+                                         </div>
+                                         <div class="col-sm-8">
+                                        <p><br>Don't let your dreams be dreams!</p><br>
+                                         
+                                        <br><br>
+                                        </div>
+
+
+                                       <div class="col-sm-4">
+                                        <img src="../img/plus.jpg" style="width:50px;height:50px;">
+                                         </div>
+                                         <div class="col-sm-8">
+                                        <p><br>You miss 100% of the shots you don't take.</p><br>
+                                         
+                                        <br><br>
+                                        </div>
+
+
+                                        <div class="col-sm-4">
+                                        <img src="../img/minus.png" style="width:50px;height:50px;">
+                                         </div>
+                                         <div class="col-sm-8">
+                                        <p><br>I prefer making transactions with foreigners.</p><br>
+                                         
+                                        <br>
+                                        </div>
+                                        <button onclick="window.location.href='forgot-password.html'" class="btn btn-primary btn-block">See More</button>
                                     </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="form-group">
-                                        <label class="control-label">Lot</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 0075">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4 col-sm-offset-4">
-                                    <button type="submit" class="btn btn-primary btn-block">Find</button>
                                 </div>
                             </div>
                         </div>
