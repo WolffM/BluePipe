@@ -22,6 +22,33 @@
 			 display: compact;
 			 font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 			}
+			ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    overflow: hidden;
+			    background-color: #333;
+			}
+
+			li {
+			    float: left;
+			}
+
+			li a {
+			    display: block;
+			    color: white;
+			    text-align: center;
+			    padding: 14px 16px;
+			    text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+			    background-color: #111;
+			}
+
+			.active {
+			    background-color: #003366;
+			}
 			
 			#white h1 {
 			   color: white;
@@ -40,11 +67,21 @@
 			    -moz-outline-radius: 10px;
 			    -webkit-outline-radius: 10px;
 			 }
+
 		</style>
 
 	</head>
 		<div class = "container">
 			<body id="white">
+				<ul style="float:left;list-style-type:none;">
+				  <li><a class="active" href="home.html">Home</a></li>
+				  <li><a href="#news">News</a></li>
+				  <li><a href="../landing-page.html">Region</a></li>
+				</ul>
+				<ul style="float:right;list-style-type:none;">
+				    <li><a href="#about">About</a></li>
+				    <li><a href="login.html">Login</a></li>
+				</ul>
 				<h1 class='text-info' align="center" color="white">Craigslist 2.0</h1>
 				<legend class='text-info' color="white">Home</legend>
 				<div class="container">
@@ -58,7 +95,7 @@
 						
 						<div class="btn-group">
 						  <div class="btn-group">
-						    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
 						      Type <span class="caret"></span></button>
 						    <ul class="dropdown-menu" role="menu">
 						      <li><a href="#">For Sale</a></li>
@@ -75,7 +112,7 @@
 						</div>
 					
 						  <div class="btn-group">
-						    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
 						      Categories <span class="caret"></span></button>
 						    <ul class="dropdown-menu" role="menu">
 						    	 <li><a href="#">General</a></li>
@@ -103,20 +140,32 @@
 						<div class="container" align="right">
 						  <div class="row">
 						    <div class="col-md-4">
-						      <h2>Recently Searched</h2><br><br>
-						      <div class= "panel panel-default">
-						  		<div class= "panel-body">  Below is a list of all your recently searched items.
-						  		</div>
+						      <br><br>
+						      
+						      <div class= "panel panel-primary">
+						      	<div class="panel-heading" align="middle">Recently Searched</div>
 						  		<table class="table">
 						  			<tr>
-						  				<td> Basket Bicycle <br>  <img src = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Long_john_bicycle.jpg" height ="100" width="100"> </img></td>
-						  				<td> longest bicycle <br> <img src = "http://i.dailymail.co.uk/i/pix/2013/04/09/article-2306245-1930C930000005DC-203_634x426.jpg" height="100" width="100"> </img></td>
+						  				<td><a href="#">  Basket Bicycle</a> <br>  <img src = "https://upload.wikimedia.org/wikipedia/commons/6/6e/Long_john_bicycle.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#">  longest bicycle</a> <br> <img src = "http://i.dailymail.co.uk/i/pix/2013/04/09/article-2306245-1930C930000005DC-203_634x426.jpg" height="100" width="100"> </img></td>
 
 						  			</tr>
+						  			<tr>
 
-						  				<td> blue long bicycle <br>  <img src = "http://www.irenesinternet.com/wp-content/uploads/2011/12/StretchedBike2.jpg" height ="100" width="100"> </img></td>
-						  				<td> mini bicycle <br> <img src = "http://www.aboutfacesentertainers.com/images/clowns/mayhem/may_g_little_bike.jpg" height="100" width="100"> </img></td>
+						  				<td><a href="#">  blue long bicycle</a> <br>  <img src = "http://www.irenesinternet.com/wp-content/uploads/2011/12/StretchedBike2.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#">  mini bicycle</a> <br> <img src = "http://www.aboutfacesentertainers.com/images/clowns/mayhem/may_g_little_bike.jpg" height="100" width="100"> </img></td>
 						  			</tr>
+						  			<tr>
+
+						  				<td><a href="#"> pink bicycle</a> <br> <img src = "https://cdn.shopify.com/s/files/1/0232/3305/products/State_Bicycle_Cyclocross_SSCX_Thunderbird2_large.JPG?v=1432246329" height ="100" width="100"> </img></td>
+						  				<td><a href="#"> kids bicycle</a> <br> <img src = "http://www.clipartbest.com/cliparts/xcg/yK6/xcgyK6kcA.jpeg" height="100" width="100"> </img></td>
+						  			</tr>
+						  			<tr>
+
+						  				<td><a href="#">  steampunk bicycle</a> <br>  <img src = "http://cdn.silodrome.com/wp-content/uploads/2013/02/motorized-bicycle.jpeg" height ="100" width="100"> </img></td>
+						  				<td><a href="#">  movie prop bicycle</a> <br> <img src = "http://www.gabikeadventures.com/alpha/wp-content/uploads/2014/09/bicycle-HD.jpg" height="100" width="100"> </img></td>
+						  			</tr>
+
 
 						  		</table>
 						  	</div>
@@ -129,20 +178,31 @@
 
 
 						    <div class="col-md-4">
-						      <h2>Watchlist</h2><br><br>
-						       <div class= "panel panel-default">
-						  		<div class= "panel-body">  Below is a list of all the items on your watchlist
-						  		</div>
+						      <br><br>
+						       <div class= "panel panel-primary">
+						       	<div class="panel-heading" align="middle">Watchlist</div>
 						  		<table class="table">
 						  			<tr>
-						  				<td> Bicycle <br>  <img src = "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg" height ="100" width="100"> </img></td>
-						  				<td> unicycle2000 <br> <img src = "https://lh3.googleusercontent.com/-SPq5PoPGBPI/UQ_s1i3yFNI/AAAAAAACBWU/QK1Fhj20zNA/w506-h356/Homemade%2BPowered%2BUnicycle.png" height="100" width="100"> </img></td>
+						  				<td><a href="#">  Bicycle</a> <br>  <img src = "https://upload.wikimedia.org/wikipedia/commons/4/41/Left_side_of_Flying_Pigeon.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#">  unicycle2000</a> <br> <img src = "https://lh3.googleusercontent.com/-SPq5PoPGBPI/UQ_s1i3yFNI/AAAAAAACBWU/QK1Fhj20zNA/w506-h356/Homemade%2BPowered%2BUnicycle.png" height="100" width="100"> </img></td>
 
 						  			</tr>
+						  			<tr>
 
-						  				<td> unicycle <br>  <img src = "http://www.dube.com/blog/wp-content/uploads/2012/05/unicycling-DUI-in-Burbank.jpg" height ="100" width="100"> </img></td>
-						  				<td> long bicycle <br> <img src = "http://www.atomiczombie.com/plans/voyageur/Voyageur%20Long%20Wheelbase%20Recumbent%20Bike%205.jpg" height="100" width="100"> </img></td>
+						  				<td><a href="#">  unicycle</a> <br>  <img src = "http://www.dube.com/blog/wp-content/uploads/2012/05/unicycling-DUI-in-Burbank.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#">  long bicycle</a> <br> <img src = "http://www.atomiczombie.com/plans/voyageur/Voyageur%20Long%20Wheelbase%20Recumbent%20Bike%205.jpg" height="100" width="100"> </img></td>
 						  			</tr>
+						  			<tr>
+						  				<td><a href="#"> Red Bicycle</a> <br>  <img src = "http://weknowyourdreams.com/images/bicycle/bicycle-01.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#"> Blue Bicycle</a><br> <img src = "http://www.bikeregister.ie/images/bicycle.jpg" height="100" width="100"> </img></td>
+
+						  			</tr>
+						  			<tr>
+
+						  				<td><a href="#">  Cool Bike</a> <br>  <img src = "http://media1.santabanta.com/full1/Vehicles/Bicycles/bicycles-117a.jpg" height ="100" width="100"> </img></td>
+						  				<td><a href="#"> Yellow bicycle</a> <br> <img src = "http://www.clipartbest.com/cliparts/7ia/yK6/7iayK6KiA.jpeg" height="100" width="100"> </img></td>
+						  			</tr>
+
 
 						  		</table>
 						  	</div>
